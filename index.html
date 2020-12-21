@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TUBES2</title>
+</head>
+
+<body id="home" class="scrollspy">
+
+    <div class="navbar-fixed">
+        <nav class="light-blue">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#home" class="brand-logo">NIKOLAS RAMADHAN</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="">About Us</a></li>
+        <li><a href="">Clients</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Contact Us</a></li>
+    </ul>
+
+
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/WhatsApp Image 2020-12-21 at 16.39.29.jpeg">
+                <div class="caption left-align">
+                    <h3>Nikolas Ramadhan</h3>
+                    <h5 class="light grey-text text-lighten-3">Kantor Kearsipan</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/WhatsApp Image 2020-12-21 at 16.39.29 (1).jpeg">
+                <div class="caption left-align">
+                    <h3>Nikolas Ramadhan</h3>
+                    <h5 class="light grey-text text-lighten-3">Kantor Kearsipan</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/WhatsApp Image 2020-12-21 at 16.41.50.jpeg">
+                <div class="caption left-align">
+                    <h3>Nikolas Ramadhan</h3>
+                    <h5 class="light grey-text text-lighten-3">Kantor Kearsipan</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="js/transition.js"></script>
+    <script>
+        const sideNav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sideNav);
+
+        const slider = document.querySelectorAll('.slider');
+        M.Slider.init(slider, {
+            height: 400,
+            transition: 600,
+            interval: 2000
+        });
+    </script>
+</body>
+
+</html>
